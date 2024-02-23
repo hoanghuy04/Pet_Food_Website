@@ -1,0 +1,76 @@
+I've changes some variables in bootstrap so that you can do these:
+
+1. text-primary, bg-primary, ...       will be the primary yellow color that you can see everywhere from the website we're building.
+2. m-6, m-7, m-8, m-9, m-10, p-6, .... since I added some more spacing options from 6 to 10.
+3. btn                                 will have the padding and border-radius set
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+You can read it here:
+
+// Font
+$font-family-sans-serif: 'Farro';
+
+// Color
+$primary: #ffc600;
+$danger: #ef3636;
+$light: #fff;
+$success: #a3dd84;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 6,
+    8: $spacer * 8,
+    9: $spacer * 12,
+    10: $spacer * 15,
+);
+
+// body
+$body-color: black;
+
+// button
+$button-padding-y: 12px;
+$button-padding-x: 30px;
+$button-border-radius: 30px;
+
+$btn-padding-y: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x-sm: $button-padding-x;
+
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-x-lg: $button-padding-x;
+
+$btn-border-radius: $button-border-radius;
+$btn-border-radius-sm: $button-border-radius;
+$btn-border-radius-lg: $button-border-radius;
+
+$btn-font-size: 12px;
+
+// navbar
+$navbar-toggler-border-radius: 5px;
+$navbar-nav-link-padding-x: 0;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+$navbar-padding-y: $spacer;
+$navbar-padding-x: 1rem;
+$navbar-toggler-focus-width: 2px;
+
+// carousel
+$carousel-indicator-active-bg: #000;
+$carousel-indicator-width: 5px;
+$carousel-indicator-height: 5px;
+$carousel-indicator-spacer: 8px;
+
+// input
+$input-placeholder-color: rgba(0, 0, 0, 0.5);
+$input-plaintext-color: rgb(0, 0, 0);
