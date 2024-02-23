@@ -1,0 +1,142 @@
+/* nav bar & footer */
+::selection {
+  background: var(--bs-primary);
+  color: white;
+}
+
+.super-sm-text {
+  font-size: 6px;
+}
+
+.sm-text {
+  font-size: 14px;
+}
+
+.link-light:hover {
+  color: var(--bs-primary) !important;
+}
+
+.navbar-scroll-effect {
+  background-color: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 200ms ease-in-out;
+}
+
+.breadcrumb-wrapper {
+  background: url("/images/bg-curly-dark.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/pages_breadcrumb.png") center center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  --clr-background: #4f4137;
+  background: url("/images/bg-curly-dark.png"), linear-gradient(var(--clr-background), var(--clr-background));
+  background-size: cover;
+}
+
+@keyframes border-grow {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-inline: 1rem;
+}
+
+.nav-link.nav-link-hover {
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link.nav-link-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--bs-primary);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link.nav-link-hover:hover::after {
+  animation: border-grow 0.3s forwards;
+}
+
+.dropdown.dropstart {
+  position: relative !important;
+}
+
+.dropdown.dropstart .dropdown-menu {
+  position: absolute !important;
+  top: 200% !important;
+  right: 0;
+}
+
+.dropdown-toggle::before {
+  display: none !important;
+}
+
+.offcanvas {
+  max-width: 80%;
+}
+
+.btn:hover .fa-stack {
+  transform: scale(1.5);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* -----------------------------Your code goes here------------------------- */
+a{
+  text-decoration: none;
+}
+
+/* Common Topic Start */
+.col-full li a:hover{
+  color: var(--bs-primary) !important;
+  transition: 0.4s;
+}
+
+.col-full li a:not(:hover){
+  transition: 0.4s;
+}
+/* Common Topic End */
+
+.collapse {
+  transition: 1.2s;
+}
+
+.collapse-item{
+  padding: 8px 0px;
+}
+
+.card{
+  padding-top: 8px;
+  padding-left: 0;
+}
+
+.details-1-bg-2{
+left: 0;
+bottom: 128px;
+}
+
+.details-1-bg-1{
+  right: 0;
+  top: calc(50% - 158px);
+}
